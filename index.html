@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snehal Jadhav - Full-Stack Developer portfolio">
+    <meta name="theme-color" content="#0b1020">
+
+    <title>Snehal Jadhav | Full-Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Animated background blobs -->
+    <div class="bg-blobs" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">Snehal<span>.</span></a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact" class="nav-cta">Contact</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <p class="small-heading"><span class="wave">👋</span> HELLO, I'M</p>
+
+                <h1>
+                    Snehal <span class="gradient-text">Jadhav</span>
+                </h1>
+
+                <h2>
+                    I'm a <span class="typed" id="typed"></span><span class="cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    I build responsive and user-friendly web applications
+                    using modern frontend and backend technologies.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-btn">
+                        View My Work <span class="arrow">→</span>
+                    </a>
+
+                    <a href="#contact" class="secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/snehalrj216" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                    </a>
+                    <a href="mailto:snehal8472@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="image-glow"></div>
+
+                <div class="image-circle">
+                    <img src="profile.jpeg" alt="Snehal Jadhav">
+                </div>
+
+                <div class="float-chip chip-1">⚛️ React</div>
+                <div class="float-chip chip-2">🟢 Node.js</div>
+                <div class="float-chip chip-3">🍃 MongoDB</div>
+
+                <div class="profile-badge">
+                    💻 Full-Stack Developer | Building & Learning
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#about" class="scroll-hint" aria-label="Scroll down">
+            <span></span>
+        </a>
+
+    </section>
+
+
+    <!-- Stats strip -->
+    <section class="stats">
+        <div class="stat reveal">
+            <h3 data-count="3">0</h3>
+            <p>Projects Built</p>
+        </div>
+        <div class="stat reveal">
+            <h3 data-count="11">0</h3>
+            <p>Technologies</p>
+        </div>
+        <div class="stat reveal">
+            <h3 data-count="5" data-suffix="+">0</h3>
+            <p>Years in Computer Studies</p>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+
+        <div class="section-heading reveal">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-text reveal">
+
+                <p>
+                    I am Snehal Jadhav, an engineering student specializing
+                    in Artificial Intelligence and Data Science with a strong
+                    interest in full-stack web development.
+                </p>
+
+                <p>
+                    I enjoy creating responsive, user-friendly websites and
+                    web applications. I have been learning technologies such
+                    as HTML, CSS, JavaScript, React.js, Node.js, Express.js
+                    and MongoDB.
+                </p>
+
+                <p>
+                    I enjoy working on practical projects because they help
+                    me understand how frontend and backend technologies work
+                    together to build complete web applications.
+                </p>
+
+                <p>
+                    My goal is to improve my technical skills, gain practical
+                    industry experience and grow as a full-stack developer.
+                </p>
+
+            </div>
+
+
+            <div class="about-card reveal">
+
+                <div class="info-item">
+                    <span>🎓</span>
+                    <div>
+                        <h3>Education</h3>
+                        <p>B.E. in Artificial Intelligence & Data Science</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span>💻</span>
+                    <div>
+                        <h3>Focus</h3>
+                        <p>Full-Stack Web Development</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span>🚀</span>
+                    <div>
+                        <h3>Currently</h3>
+                        <p>Learning & building web applications</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+
+        <div class="section-heading reveal">
+            <p>WHAT I WORK WITH</p>
+            <h2>My <span class="gradient-text">Skills</span></h2>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">🌐</div>
+                <h3>Frontend</h3>
+
+                <div class="skill-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React.js</span>
+                </div>
+            </div>
+
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">⚙️</div>
+                <h3>Backend</h3>
+
+                <div class="skill-tags">
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">🗄️</div>
+                <h3>Database & Tools</h3>
+
+                <div class="skill-tags">
+                    <span>MongoDB</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+
+        <div class="projects-header">
+
+            <div class="section-heading reveal">
+                <p>MY WORK</p>
+
+                <h2>
+                    Featured <span class="gradient-text">Projects</span>
+                </h2>
+            </div>
+
+            <p class="projects-intro reveal">
+                A few projects I've built while learning and developing
+                my skills.
+            </p>
+
+        </div>
+
+
+        <div class="projects-container">
+
+
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+
+                <div class="project-top">
+                    <span class="project-number">01</span>
+                    <div class="project-icon">🩺</div>
+                </div>
+
+                <h3>MediAI</h3>
+
+                <p>
+                    An AI-powered online doctor appointment platform with
+                    appointment booking, doctor dashboard and an AI assistant.
+                </p>
+
+                <div class="project-tags">
+                    <span>React.js</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                    <span>Gemini API</span>
+                </div>
+
+                <a
+                    href="https://github.com/snehalrj216/MediAI"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link">
+                    View Project <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project-card reveal">
+
+                <div class="project-top">
+                    <span class="project-number">02</span>
+                    <div class="project-icon">😊</div>
+                </div>
+
+                <h3>Emotion Detection</h3>
+
+                <p>
+                    A real-time web application that uses the camera to
+                    detect facial expressions including Happy, Sad,
+                    Angry and Neutral.
+                </p>
+
+                <div class="project-tags">
+                    <span>React.js</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <a
+                    href="https://github.com/snehalrj216/emotion-detection"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link">
+                    View Project <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card reveal">
+
+                <div class="project-top">
+                    <span class="project-number">03</span>
+                    <div class="project-icon">💰</div>
+                </div>
+
+                <h3>Expense Tracker</h3>
+
+                <p>
+                    A web application for managing and tracking personal
+                    expenses using backend APIs and a MongoDB database.
+                </p>
+
+                <div class="project-tags">
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    Project Details <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+
+        <div class="section-heading reveal">
+            <p>MY JOURNEY</p>
+            <h2>Education & <span class="gradient-text">Learning</span></h2>
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2024 - Present
+                    </span>
+
+                    <h3>
+                        B.E. Artificial Intelligence & Data Science
+                    </h3>
+
+                    <p>
+                        Genba Sopanrao Moze College of Engineering,
+                        Balewadi, Pune.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2021 - 2024
+                    </span>
+
+                    <h3>
+                        Diploma in Computer Engineering
+                    </h3>
+
+                    <p>
+                        Pimpri Chinchwad Polytechnic, Pune.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-wrap">
+
+        <div class="contact-section reveal">
+
+            <p class="small-heading">LET'S CONNECT</p>
+
+            <h2>
+                Let's build something
+                <span class="gradient-text">great together.</span>
+            </h2>
+
+            <p class="contact-text">
+                I am always interested in learning, building projects
+                and exploring new opportunities in web development.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a
+                    href="mailto:snehal8472@gmail.com"
+                    class="primary-btn">
+                    ✉ Get In Touch
+                </a>
+
+                <a
+                    href="https://github.com/snehalrj216"
+                    target="_blank"
+                    rel="noopener"
+                    class="secondary-btn">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Snehal Jadhav
+        </p>
+
+        <p>
+            Full-Stack Developer | Building & Learning
+        </p>
+
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
