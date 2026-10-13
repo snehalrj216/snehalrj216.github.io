@@ -966,7 +966,13 @@ h1, h2, h3, .logo {
     transition: transform 0.3s;
 }
 
-.project-link:hover {
+.project-link.disabled {
+    color: var(--gray);
+    font-weight: 500;
+    cursor: default;
+}
+
+.project-link:not(.disabled):hover {
     color: var(--cyan);
 }
 
